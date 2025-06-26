@@ -1,0 +1,12 @@
+{
+  "name": "kiroku",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "nx": "21.2.1"
+  }
+}
