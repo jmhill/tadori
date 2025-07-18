@@ -1,2 +1,73 @@
+# Dependencies
 node_modules
-.nx
+
+# Nx
+.nx/cache
+.nx/workspace-data
+!.nx/workflows
+nx-cloud.env
+
+# Build outputs
+dist
+build
+tmp
+out
+
+# Testing
+coverage
+.nyc_output
+*.lcov
+dist/.playwright
+e2e/videos
+e2e/screenshots
+
+# IDE
+.idea
+.vscode
+.cursor
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+temp
+*.tmp
+*.temp
+
+# Misc
+*.orig
+.sass-cache
+connect.lock
+libpeerconnection.log
+testem.log
+typings
+
+# Build timestamp files
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
