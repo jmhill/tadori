@@ -161,9 +161,17 @@ Testing strategy remains the same but becomes simpler. We no longer need to mock
 
 ### 9. UI Approach
 
-**Decision: Responsive from start with Tailwind** (Unchanged)
+**Decision: CSS Modules with Mobile-First Design**
 
-The UI approach remains identical. Mobile-first, responsive design with Tailwind CSS continues to be the right choice for meeting our sub-3-second capture requirement.
+We're using CSS Modules for styling, which comes pre-configured with the Preact + Vite setup. This approach provides scoped styling, prevents CSS conflicts, and keeps our bundle size minimal. CSS Modules are perfect for our component-based architecture and don't add any runtime overhead. The mobile-first, responsive design approach remains essential for meeting our sub-3-second capture requirement.
+
+**Why CSS Modules over Tailwind:**
+- ✅ Zero runtime overhead
+- ✅ Already configured with Preact template
+- ✅ Scoped styles prevent conflicts
+- ✅ Better performance for PWA
+- ✅ Smaller bundle size
+- ✅ Full CSS control for complex animations
 
 ## Architecture Summary
 

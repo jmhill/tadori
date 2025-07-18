@@ -3,16 +3,16 @@
 ## Phase 0: Foundation Setup (Simplified)
 
 ### Development Environment
-- [ ] Initialize Vite project with Preact template
-- [ ] Configure TypeScript with strict mode
-- [ ] Set up ESLint and Prettier
+- [x] Initialize Vite project with Preact template
+- [x] Configure TypeScript with strict mode
+- [x] Set up ESLint and Prettier
 - [ ] Configure Vite for PWA development (vite-plugin-pwa)
-- [ ] Set up Tailwind CSS
+- [x] Set up CSS modules (already configured with Preact template)
 - [ ] Create basic folder structure (features, components, lib)
 
 ### Testing Infrastructure
-- [ ] Install and configure Vitest
-- [ ] Set up Playwright for E2E tests
+- [x] Install and configure Vitest
+- [x] Set up Playwright for E2E tests
 - [ ] Create test utilities for event sourcing
 - [ ] Set up coverage reporting
 

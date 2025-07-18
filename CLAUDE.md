@@ -10,7 +10,7 @@ Tadori is a personal project management system that treats projects as "evolving
 
 ### Frontend Stack
 - **Framework**: Preact + Vite (chosen for small bundle size ~3KB)
-- **Styling**: Tailwind CSS (planned)
+- **Styling**: CSS Modules (pre-configured with Preact template)
 - **State Management**: Event sourcing pattern with state projections
 - **Local Storage**: Dexie.js (IndexedDB wrapper)
 - **Sync**: Dexie Cloud (zero-config sync solution)
@@ -54,12 +54,22 @@ The application uses event sourcing as its core pattern:
 
 ## Current Project Status
 
-The project is in **Phase 0: Foundation Setup**. No code has been written yet. The next steps from the implementation plan are:
-1. Initialize Vite project with Preact template
-2. Configure TypeScript with strict mode
-3. Set up testing infrastructure (Vitest + Playwright)
-4. Configure PWA support
-5. Set up Dexie Cloud account and credentials
+The project is in **Phase 0: Foundation Setup** with most core infrastructure complete:
+
+### ✅ Completed
+- Preact app with Vite created using Nx
+- TypeScript with strict mode configured
+- Vitest unit testing setup
+- Playwright e2e testing setup  
+- ESLint and Prettier configured
+- CSS Modules ready for use
+- Comprehensive .gitignore for Nx monorepos
+
+### 🔄 Next Steps
+1. Configure Vite for PWA development (vite-plugin-pwa)
+2. Create basic folder structure (features, components, lib)
+3. Set up Dexie Cloud account and credentials
+4. Begin Phase 1: Walking Skeleton with Sync
 
 ## Important Context from Documentation
 
